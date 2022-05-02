@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leader Board</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/icons/star.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/b1a8b6c8af.js" crossorigin="anonymous"></script>
 </head>
@@ -14,13 +15,18 @@
 <body style="background-color: #F3F1FF;">
     <!-- Header Area  -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <img src="images/icons/logo.png" alt="" width="41px" height="51px">
                     <span class="text-light ms-2">Idea</span>
                 </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation" style="background-color: white;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
                         <li class="nav-item">
                             <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
@@ -58,42 +64,42 @@
                 <h4>Top Players</h4>
                 <div class="row mt-2 gy-4">
                     <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
-                        <img src="images/players/player-1.png" width="56px"  alt="Photo">
+                        <img src="images/players/player-1.png" width="56px" alt="Photo">
                         <h5 class="ms-2">John Smith</h5>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
-                        <img src="images/players/player-2.png" width="56px"  alt="Photo">
+                        <img src="images/players/player-2.png" width="56px" alt="Photo">
                         <h5 class="ms-2">John Smith</h5>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
-                        <img src="images/players/player-3.png" width="56px"  alt="Photo">
+                        <img src="images/players/player-3.png" width="56px" alt="Photo">
                         <h5 class="ms-2">John Smith</h5>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
-                        <img src="images/players/player-4.png" width="56px"  alt="Photo">
+                        <img src="images/players/player-4.png" width="56px" alt="Photo">
                         <h5 class="ms-2">John Smith</h5>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
-                        <img src="images/players/player-5.png" width="56px"  alt="Photo">
+                        <img src="images/players/player-5.png" width="56px" alt="Photo">
                         <h5 class="ms-2">John Smith</h5>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
-                        <img src="images/players/player-6.png" width="56px"  alt="Photo">
+                        <img src="images/players/player-6.png" width="56px" alt="Photo">
                         <h5 class="ms-2">John Smith</h5>
                     </div>
                 </div>
             </div>
             <hr>
             <!-- Top Blogs -->
-            <div>
+            <div id="blogs">
                 <h4>Top Blogs</h4>
-                <div class="row gy-4">
+                <div class="row mt-2 pb-4 gy-4">
                     <div class="col-md-12 col-lg-6 d-flex">
                         <div>
                             <img src="images/blogs/blog-1.png" width="177px" alt="Photo">
                         </div>
                         <div class="ps-3">
-                            <h4>13 of My Favorite UI/UX Goodies</h4>
+                            <h5>13 of My Favorite UI/UX Goodies</h5>
                             <p>By <a href="#">Danny Sapio</a></p>
                         </div>
                     </div>
@@ -102,14 +108,118 @@
                             <img src="images/blogs/blog-2.png" width="177px" alt="Photo">
                         </div>
                         <div class="ps-3">
-                            <h4>UI cheat sheet: list vs grids</h4>
-                            <p>By <a href="#">Danny Sapio</a></p>
+                            <h5>UI cheat sheet: list vs grids</h5>
+                            <p>By <a href="#">Tess Gadd</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex">
+                        <div>
+                            <img src="images/blogs/blog-3.png" width="177px" alt="Photo">
+                        </div>
+                        <div class="ps-3">
+                            <h5>7 typography tips for interface design</h5>
+                            <p>By <a href="#">Jeremiah Lam</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex">
+                        <div>
+                            <img src="images/blogs/blog-4.png" width="177px" alt="Photo">
+                        </div>
+                        <div class="ps-3">
+                            <h5>Your logo is copied</h5>
+                            <p>By <a href="#">Ferdinand Vogler</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="container mt-4 bg-light pt-4 pb-4 mb-4" id="courses">
+            <!-- Latest Course -->
+            <div>
+                <h4>Latest Course</h4>
+                <div class="row g-4 mt-2">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="row ps-4">
+                            <div class="col-lg-11 col-md-11 col-sm-11 col-11 shadow" style="border-radius: 12px;">
+                                <img class="mt-2" src="images/courses/course-1.png" width="100%" alt="Photo">
+                                <h5 class="mt-4 mb-3">React - The Complete Guide 2022</h5>
+                                <a href="#">Fahim Shahariar</a>
+                                <div class="d-flex justify-content-between mt-4 mb-3">
+                                    <div>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star empty" style="color: #AEAEAE; font-size: 12px;"></i>
+                                        <span style="font-size: 14px;">4.5</span>
+                                    </div>
+                                    <div
+                                        style="font-size: 14px; background-color: #FFE4E8; color: #FF4A60; padding: 4px; border-radius: 15px;">
+                                        <i class="fa-regular fa-clock"></i>
+                                        01:30 hr
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="row ps-4">
+                            <div class="col-lg-11 col-md-11 col-sm-11 col-11 shadow" style="border-radius: 12px;">
+                                <img class="mt-2" src="images/courses/course-2.png" width="100%" alt="Photo">
+                                <h5 class="mt-4 mb-3">Powerpoint 2022 - Master Powerpoint Course</h5>
+                                <a href="#">Fahim Shahariar</a>
+                                <div class="d-flex justify-content-between mt-4 mb-3">
+                                    <div>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star empty" style="color: #AEAEAE; font-size: 12px;"></i>
+                                        <span style="font-size: 14px;">4.5</span>
+                                    </div>
+                                    <div
+                                        style="font-size: 14px; background-color: #FFE4E8; color: #FF4A60; padding: 4px; border-radius: 15px;">
+                                        <i class="fa-regular fa-clock"></i>
+                                        01:20 hr
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="row ps-4">
+                            <div class="col-lg-11 col-md-11 col-sm-11 col-11 shadow" style="border-radius: 12px;">
+                                <img class="mt-2" src="images/courses/course-3.png" width="100%" alt="Photo">
+                                <h5 class="mt-4 mb-3">The Complete JavaScript Course 2022</h5>
+                                <a href="#">Fahim Shahariar</a>
+                                <div class="d-flex justify-content-between mt-4 mb-3">
+                                    <div>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star filled" style="color: #FFC014; font-size: 12px;"></i>
+                                        <i class="fa-solid fa-star empty" style="color: #AEAEAE; font-size: 12px;"></i>
+                                        <span style="font-size: 14px;">4.5</span>
+                                    </div>
+                                    <div
+                                        style="font-size: 14px; background-color: #FFE4E8; color: #FF4A60; padding: 4px; border-radius: 15px;">
+                                        <i class="fa-regular fa-clock"></i>
+                                        01:30 hr
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- Footer Area  -->
+    <footer>
+        <p>Copyright © 2022 <a href="https://github.com/jk-nayeem" class="text-decoration-none">Jannatun Nayeem</a></p>
+    </footer>
 
 
 

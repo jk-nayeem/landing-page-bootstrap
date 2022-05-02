@@ -1,0 +1,14 @@
+#blogs a {
+    text-decoration: none;
+    color: #562EFF;
+}
+#courses a {
+    text-decoration: none;
+    color: #FF4A60;
+}
+footer p {
+    text-align: center;
+}
+footer p a {
+    color: #FF4A60;
+}
